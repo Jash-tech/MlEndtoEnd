@@ -1,0 +1,93 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="ClaimNb">ClaimNb:</label>
+        <input type="text" id="ClaimNb" name="ClaimNb" placeholder="Enter ClaimNb value (int)">
+    </div>
+
+    <div class="form-group">
+        <label for="Exposure">Exposure:</label>
+        <input type="text" id="Exposure" name="Exposure" placeholder="Enter Exposure value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="CarAge">CarAge:</label>
+        <input type="text" id="CarAge" name="CarAge" placeholder="Enter CarAge value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="DriverAge">DriverAge:</label>
+        <input type="text" id="DriverAge" name="DriverAge" placeholder="Enter DriverAge value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Density">Density:</label>
+        <input type="text" id="Density" name="Density" placeholder="Enter Density value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="ClaimFreq">ClaimFreq:</label>
+        <input type="text" id="ClaimFreq" name="ClaimFreq" placeholder="Enter ClaimFreq value (float)">
+    </div>         
+  
+<div class="form-group">
+  <label for="Power">Power:</label>
+  <select id="Power" name="Power">
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+    <option value="i">i</option>
+    <option value="j">j</option>
+    <option value="k">k</option>
+    <option value="l">l</option>
+    <option value="m">m</option>
+    <option value="n">n</option>
+    <option value="o">o</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="Brand">Brand:</label>
+  <select id="Brand" name="Brand">
+    <option value="Renault, Nissan or Citroen">Renault, Nissan or Citroen</option>
+    <option value="Japanese (except Nissan) or Korean">Japanese (except Nissan) or Korean</option>
+    <option value="Opel, General Motors or Ford">Opel, General Motors or Ford</option>
+    <option value="Volkswagen, Audi, Skoda or Seat">Volkswagen, Audi, Skoda or Seat</option>
+    <option value="Mercedes, Chrysler or BMW">Mercedes, Chrysler or BMW</option>
+    <option value="Fiat">Fiat</option>
+    <option value="other">other</option>
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="Gas">Gas:</label>
+    <select id="Gas" name="Gas">
+      <option value="Regular">Regular</option>
+      <option value="Diesel">Diesel</option>
+    </select>
+  </div>
+
+<div class="form-group">
+    <label for="Region">Region:</label>
+    <select id="Region" name="Region">
+      <option value="Centre">Centre</option>
+      <option value="Ile-de-France">Ile-de-France</option>
+      <option value="Bretagne">Bretagne</option>
+      <option value="Pays-de-la-Loire">Pays-de-la-Loire</option>
+      <option value="Aquitaine">Aquitaine</option>
+      <option value="Nord-Pas-de-Calais">Nord-Pas-de-Calais</option>
+      <option value="Poitou-Charentes">Poitou-Charentes</option>
+      <option value="Basse-Normandie">Basse-Normandie</option>
+      <option value="Haute-Normandie">Haute-Normandie</option>
+      <option value="Limousin">Limousin</option>
+    </select>
+</div>
+  
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

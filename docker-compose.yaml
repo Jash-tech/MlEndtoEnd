@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  insapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile.flask
+    image: insimage
+    container_name: insclaim-prediction-flask
+    ports:
+      - "8000:8000"
+
+
+
+
+# version: Specifies the version of the Compose file format. "3" is used here.
+# services: This section defines all the services (containers) that make up your application.
+# flaskapp: The name of the service.
+# build: Specifies the build configuration.
+# context: The build context, usually the directory containing the Dockerfile.
+# dockerfile: Specifies an alternate Dockerfile (Dockerfile.flask in this case).
+# image: The name of the image to be created.
+# container_name: The name of the container.
+# ports: Maps port 80 on the host to port 80 on the container.
